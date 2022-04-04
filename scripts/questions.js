@@ -101,21 +101,61 @@ const data = [
 
     },
     {
-        "question": "Cuiabá é a capital de qual estado?",
+        "question": "O que é o Brasil?",
         "answers": [
-            {"answer": "Mato Grosso",
+            {"answer": "uma capital",
+             "correct": false
+            },
+            {"answer": "uma província",
+             "correct": false
+            },
+            {"answer": "um país",
              "correct": true
             },
+            {"answer": "um bairo",
+             "correct": false
+            },
+            {"answer": "uma cidade",
+             "correct": false
+            },
+        ]
+    },
+    {
+        "question": "Cuiabá é a capital de qual estado?",
+        "answers": [
             {"answer": "Maranhão",
              "correct": false
             },
-            {"answer": "Ril Grande Do Sul",
+            {"answer": "Rio Grande Do Sul",
              "correct": false
             },
             {"answer": "Roraima",
              "correct": false
             },
+            {"answer": "Mato Grosso",
+             "correct": true
+            },
             {"answer": "Mato Grosso do Sul",
+             "correct": false
+            },
+        ]
+    }    ,
+    {
+        "question": "Qual é a capital de sergipe?",
+        "answers": [
+            {"answer": "João Pessoa",
+             "correct": false
+            },
+            {"answer": "salvador",
+             "correct": false
+            },
+            {"answer": "Rio Grande Do Sul",
+             "correct": false
+            },
+            {"answer": "Aracajú",
+             "correct": true
+            },
+            {"answer": "Maranhão",
              "correct": false
             },
         ]
