@@ -117,6 +117,8 @@ function hideOrShowQuizz() {
 }
  
 document.querySelector("#restart").addEventListener("click", () =>{
+    const h2 = document.querySelector('h2')
+    h2.innerHTML = "Parabéns"
 
     actualQuestion = 0
     points = 0;
