@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Minha Geografia</title>
+</head>
+<body>
+    <h1 id="main-title">Quizz Minha Geografia</h1>
+    <!-- Score Board -->
+    <div class="hide" id="score-container">
+        <h2>Parabéns</h2>
+        <p id="display-score"><span>90</span>%</p>
+        <p>Você acertou <span id="correct-answers">0</span> de <span id="question-qty">10</span> perguntas.</p>
+        <button id="restart">Refazer o quizz!</button>
+    </div>
+
+    <!-- Quizz Container-->
+    <div id="quizz-container">
+        <p id="question">
+            <span id="question-number">1</span> - <span id="question-text">Aqui ficará a pergunta</span>
+        </p>
+        <div id="answers-box">
+            <button><span class="btn-letter">a</span><span class="question-answer">resposta 1</span></button>
+            <button><span class="btn-letter">b</span><span class="question-answer">resposbsdfgbesbdfzhbsrfgcvcbfta 2</span></button>
+            <button><span class="btn-letter">c</span><span class="question-answer">resposta 3</span></button>
+            <button><span class="btn-letter">a</span><span class="question-answer">resposta 4</span></button>
+            <button><span class="btn-letter">a</span><span class="question-answer">resposta 5</span></button>
+        </div>
+    </div>
+    <div id="acertouId" class="acertou"><p>Parabens Você Acertou</p></div>
+    <div class="errou"></div>
+    <!-- Template Resposta -->
+    <button class="answer-template hide"><span class="btn-letter">a</span><span class="question-answer">resposta 5</span></button>
+    <script src="scripts/questions.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+$backgroundColorBody: #242940;
+$backgroundColorTitle: #2d425a;
+$backgroundColorScore: #cddde8;
+$correctAnswers: #40b576;
+$questionsQti: #075ea4;
+$backgroundColorRestartButton:#e78230;
+$backgroundColorRestartButtonHover: transparent;
+$colorTexts: #fff;
+$WrongAnswer: #e62210;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+body{
+    background-color: $backgroundColorBody;
+    color: $colorTexts;
+    .hide{
+        display: none !important;
+    }
+    #main-title{
+        padding: 40px 0;
+        text-align: center;
+        background-color: $backgroundColorTitle;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    #score-container{
+        background-color: $backgroundColorScore;
+        color: #000;
+        text-align: center;
+        width: 300px;
+        margin: 50px auto;
+        padding: 25px;
+        border-radius: 20px;
+        #display-score{
+            font-size: 32px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 14px;
+            margin: 20px 0;
+        }
+        #correct-answers{
+            color: $correctAnswers;
+            font-weight: bold;
+        }
+        #question-qty{
+            color: $questionsQti;
+            font-weight: bold;
+        }
+        #restart{
+            background-color: $backgroundColorRestartButton;
+            color: $colorTexts;
+            font-weight: bold;
+            border: 2px solid transparent;
+            height: 50px;
+            border-radius: 25px;
+            width: 180px;
+            text-transform: uppercase;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        #restart:hover{
+            background-color: $backgroundColorRestartButtonHover;
+            border-color: $backgroundColorRestartButton;
+            color: $backgroundColorRestartButton ;
+        }
+    }
+    #quizz-container{
+        width: 90%;
+        margin: 30px auto;
+        border: 1px solid $backgroundColorScore;
+        padding: 25px;
+        border-radius: 25px;
+        p{
+            
+            #question{
+                font-size: 15px;
+
+                #question-number{
+                    font-weight: bold;    
+                }
+                #question-text{
+
+                }
+            }
+        }
+        
+        #answers-box button{
+            
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            width: 100%;
+            height: 50px;
+            text-align: left;
+            padding-left: 5px; 
+            cursor: pointer;
+            border-radius: 30px;
+            border: 1px solid transparent;
+
+            .btn-letter{
+                font-size: 20pt;
+                font-weight: bold;
+                background-color: $backgroundColorRestartButton;
+                color: $colorTexts;
+                border-radius: 50%;
+                line-height: 40px;
+                text-align: center;
+                text-transform: uppercase;
+                flex: 1 1 0;
+                max-width: 40px;
+            }
+            .question-answer{
+                flex: 1 1 0;
+                margin-left: 10px;
+                font-size: 16px;
+            }
+            
+        }
+        .correct-answer{
+            color: $colorTexts;
+            background-color: $correctAnswers;
+            
+        }
+        .wrong-answer{
+            background-color: $WrongAnswer;
+            color: $colorTexts;
+            transition: 2s;
+        }
+
+        #answers-box button:hover{
+            background-color: $backgroundColorRestartButton;
+            
+            .btn-letter{
+                background-color: $colorTexts;
+                color: $backgroundColorRestartButton;
+            }
+        }   
+    } 
+    .acertou{
+        position: absolute;
+        background-color: $correctAnswers;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        animation-name: up;
+        animation-duration: 1s;
+        animation-fill-mode: backwards;
+        p{
+          font-size: 20pt; 
+          font-weight: bold;
+
+        }
+    } 
+    @keyframes up {
+        to{
+            transform: translateY(0);
+        }from{
+            transform: translateY(100vh);
+        }
+    }
+}
+

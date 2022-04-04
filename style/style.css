@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  background-color: #242940;
+  color: #fff;
+}
+
+body .hide {
+  display: none !important;
+}
+
+body #main-title {
+  padding: 40px 0;
+  text-align: center;
+  background-color: #2d425a;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+body #score-container {
+  background-color: #cddde8;
+  color: #000;
+  text-align: center;
+  width: 300px;
+  margin: 50px auto;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+body #score-container #display-score {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+body #score-container p {
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+body #score-container #correct-answers {
+  color: #40b576;
+  font-weight: bold;
+}
+
+body #score-container #question-qty {
+  color: #075ea4;
+  font-weight: bold;
+}
+
+body #score-container #restart {
+  background-color: #e78230;
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid transparent;
+  height: 50px;
+  border-radius: 25px;
+  width: 180px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body #score-container #restart:hover {
+  background-color: transparent;
+  border-color: #e78230;
+  color: #e78230;
+}
+
+body #quizz-container {
+  width: 90%;
+  margin: 30px auto;
+  border: 1px solid #cddde8;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+body #quizz-container p #question {
+  font-size: 15px;
+}
+
+body #quizz-container p #question #question-number {
+  font-weight: bold;
+}
+
+body #quizz-container #answers-box button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0;
+  width: 100%;
+  height: 50px;
+  text-align: left;
+  padding-left: 5px;
+  cursor: pointer;
+  border-radius: 30px;
+  border: 1px solid transparent;
+}
+
+body #quizz-container #answers-box button .btn-letter {
+  font-size: 20pt;
+  font-weight: bold;
+  background-color: #e78230;
+  color: #fff;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+  max-width: 40px;
+}
+
+body #quizz-container #answers-box button .question-answer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+body #quizz-container .correct-answer {
+  color: #fff;
+  background-color: #40b576;
+}
+
+body #quizz-container .wrong-answer {
+  background-color: #e62210;
+  color: #fff;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+body #quizz-container #answers-box button:hover {
+  background-color: #e78230;
+}
+
+body #quizz-container #answers-box button:hover .btn-letter {
+  background-color: #fff;
+  color: #e78230;
+}
+
+body .acertou {
+  position: absolute;
+  background-color: #40b576;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation-name: up;
+          animation-name: up;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+body .acertou p {
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+@-webkit-keyframes up {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  from {
+    -webkit-transform: translateY(100vh);
+            transform: translateY(100vh);
+  }
+}
+
+@keyframes up {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  from {
+    -webkit-transform: translateY(100vh);
+            transform: translateY(100vh);
+  }
+}
+/*# sourceMappingURL=style.css.map */
